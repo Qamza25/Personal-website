@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website and portfolio of Unathi Qamza" />
+  <title>Unathi Qamza | AI & ML Specialist</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans overflow-x-hidden">
+
+  <!-- Floating background shapes -->
+  <div class="floating-shapes shape-1"></div>
+  <div class="floating-shapes shape-2"></div>
+  <div class="floating-shapes shape-3"></div>
+
+  <!-- Navigation -->
+  <header class="bg-white shadow fixed w-full top-0 z-50 transition-all duration-300">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+      <div class="flex items-center space-x-4">
+        <img src="images/UNATH.jpg" alt="Profile photo" class="w-12 h-12 rounded-full shadow-lg animate-pulse-slow">
+        <h1 class="text-2xl font-bold text-indigo-600">Unathi Qamza</h1>
+      </div>
+      <nav class="space-x-6 hidden md:flex">
+        <a href="#about" class="nav-link hover:text-indigo-600">About</a>
+        <a href="#skills" class="nav-link hover:text-indigo-600">Skills</a>
+        <a href="#certificates" class="nav-link hover:text-indigo-600">Certificates</a>
+        <a href="#projects" class="nav-link hover:text-indigo-600">Projects</a>
+        <a href="#contact" class="nav-link hover:text-indigo-600">Contact</a>
+      </nav>
+      <button id="mobile-menu-toggle" class="md:hidden text-indigo-600 focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="mobile-menu md:hidden">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#certificates" class="mobile-nav-link">Certificates</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section
+    class="h-screen flex items-center justify-center flex-col text-center gradient-bg text-white relative overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="relative z-10">
+      <img src="images/UNATH.jpg" alt="Profile photo"
+        class="w-40 h-40 rounded-full shadow-lg mb-6 mx-auto animate-float border-4 border-white">
+      <h2 class="text-5xl font-bold mb-4 animate-fadeInUp">Unathi Qamza</h2>
+      <div class="text-xl mb-4 h-8">
+        <span class="typing-effect">Artificial Intelligence | Machine Learning | Software Developer Specialist </span>
+      </div>
+      <p class="text-lg mb-8 max-w-2xl mx-auto animate-fadeInUp" style="animation-delay: 0.3s;">
+        Building intelligent solutions with purpose and passion
+      </p>
+      <div class="animate-fadeInUp" style="animation-delay: 0.6s;">
+        <a href="#https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EXFaX0m3qTZAslN-mXW05S0B72gTC4dlAADhKXnyjVXjwQ?e=3adtmP"
+          target="_blank"
+          class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 transform hover:scale-105 inline-block">
+          View My CV
+        </a>
+        <a href="#contact"
+          class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all duration-300 transform hover:scale-105 inline-block">
+          Get In Touch
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator"></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white relative overflow-hidden section-hidden">
+    <div class="container mx-auto px-6 max-w-4xl text-center relative z-10">
+      <h3 class="text-4xl font-bold mb-6 text-indigo-600">About Me</h3>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="md:w-1/3">
+          <img src="images/UNATH.jpg" alt="Profile photo"
+            class="w-64 h-64 rounded-full shadow-lg mx-auto animate-pulse-slow">
+        </div>
+        <div class="md:w-2/3 text-left">
+          <p class="text-gray-700 leading-relaxed mb-4">
+            I'm Unathi Qamza, a passionate technologist on a mission to master the transformative power of Artificial
+            Intelligence and Machine Learning. With a foundation in full-stack development and a growing expertise in
+            intelligent systems, I'm driven by curiosity, purpose, and the belief that learning never stops.
+          </p>
+          <p class="text-gray-700 leading-relaxed mb-4">
+            My journey into AI isn't just about algorithms and data, it's about resilience. I've faced challenges
+            head-on, adapted with intention, and cultivated a growth mindset that fuels both personal and professional
+            evolution.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            I believe that technology should empower people, and I'm here to be part of that change one model, one
+            breakthrough, one collaboration at a time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gray-100 relative overflow-hidden section-hidden">
+    <div class="container mx-auto px-6 max-w-6xl text-center relative z-10">
+      <h3 class="text-4xl font-bold mb-6 text-indigo-600">Skills & Technologies</h3>
+      <p class="text-gray-700 mb-10 max-w-2xl mx-auto">I'm constantly expanding my toolkit to stay at the forefront of
+        technology and innovation.</p>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <i class="fas fa-brain tech-icon text-indigo-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">AI & ML</h4>
+          <p class="text-gray-600 text-sm">TensorFlow, PyTorch, Scikit-learn</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <i class="fas fa-code tech-icon text-indigo-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Full Stack</h4>
+          <p class="text-gray-600 text-sm">.Net(C#), PHP, React, Node.js, Python, Django</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <i class="fas fa-database tech-icon text-indigo-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Data Science</h4>
+          <p class="text-gray-600 text-sm">Pandas, NumPy, SQL, Data Visualization</p>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-md p-6 card-hover">
+          <i class="fas fa-cloud tech-icon text-indigo-600 mb-4"></i>
+          <h4 class="text-xl font-semibold mb-2">Cloud & DevOps</h4>
+          <p class="text-gray-600 text-sm">AWS, Docker, CI/CD, Kubernetes</p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-lg p-8 max-w-3xl mx-auto card-hover">
+        <h4 class="text-2xl font-bold mb-4 text-indigo-600">My Philosophy</h4>
+        <p class="text-gray-700 italic text-lg">
+          "You learn how to cut down trees by cutting them down." - African Proverb
+        </p>
+        <p class="text-gray-600 mt-4">
+          This proverb embodies my approach to learning and problem-solving. True mastery comes through practice,
+          persistence, and hands-on experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="py-20 bg-white relative overflow-hidden section-hidden">
+    <div class="container mx-auto px-6 max-w-6xl relative z-10">
+      <h3 class="text-4xl font-bold text-center mb-10 text-indigo-600">Certificates & Education</h3>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Technical Certificates -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6">
+          <h4 class="text-2xl font-bold mb-6 text-indigo-600 flex items-center">
+            <i class="fas fa-laptop-code mr-3"></i> Technical Certificates
+          </h4>
+
+          <!-- Technical Certificates List -->
+          <div class="certificate-list">
+
+            <div class="certificate-card bg-white rounded-lg p-4 mb-4">
+              <h5 class="font-bold text-lg mb-2">IT Diploma</h5>
+              <p class="text-gray-600 mb-2">Issuer: Nelson Mandela University </p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EclvT07kc35Au6qOd0RTVK4BpGZz2o9xB3diayb9E9D3Sw?e=4jaJd7"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2"> Introduction to Artificial Intelligence </h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href=" https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/Ef3Yw5tezZ9GvLxLSbaNnDUBYH9Zi-wnPohgrmpstuYVhQ?e=k9cne7 "
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4 mb-4">
+              <h5 class="font-bold text-lg mb-2">Al Essentials</h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EXnnlreasWNBmOLZH4xQaJwB6LC12RtO0Z8MAyWiiCNAhw?e=dUPhdy"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4 mb-4">
+              <h5 class="font-bold text-lg mb-2">AI For Everyone</h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EaNf4jbJj1BMmRJQA13ERycB_hawsO_VgEsG-Oq14Blcgg?e=JttQbq"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2"> Introduction to Generative AI </h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EbEbRwopADtBrkKwgE9XLMgBeuMy5fuG-mQbfYY37ehC-g?e=LZwCIt"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2"> AI Foundations_ Prompt Engineering with ChatGPT</h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EQ4Apt08KnJCidqamwg9GZkBQHF8tVOAw7HbZHagH5nUbw?e=I0RYhc"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2"> Generative AI with Large Language Models </h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EXiNWJT7EoNNp6VeMQ7U0NwBSpE_fMZb6SpP2BTLaQJMsQ?e=xz9m9P"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2"> Introduction to Responsive AI </h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EXAgDX1EA8tOoNOifmNqq_gBuMNAhn9tUePilx1fTyGKpA?e=x3avdb "
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2">Python for Data Science, AI & Development</h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EfltvD5cMa5GnNzEEqqjCgoBqcgNhih1jtXl7Kb6d7mB7g?e=4VDTFm "
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2"> Trustworthy AI Managing Bias, Ethics, and Accountability</h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/ERumm8GTskhImI2itKtp6J4B2Jh0t2BRGGxDFB1UlIuCng?e=HUK72O "
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+
+        <!-- Personal Development Certificates -->
+        <div class="bg-gray-50 rounded-xl shadow-lg p-6">
+          <h4 class="text-2xl font-bold mb-6 text-indigo-600 flex items-center">
+            <i class="fas fa-user-graduate mr-3"></i> Personal Development
+          </h4>
+
+          <!-- Personal Development Certificates List -->
+          <div class="certificate-list">
+            <div class="certificate-card bg-white rounded-lg p-4 mb-4">
+              <h5 class="font-bold text-lg mb-2"> Leading with Impact: Team Dynamics, Strategy and Ethics</h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EUvewA4OLCJLvl9n1riKoEwBxS2SvmL18SBjsRJK7aMfeQ?e=LHSVZO"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4 mb-4">
+              <h5 class="font-bold text-lg mb-2"> Active Listening Enhancing Communication Skills</h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/ESpHsbmL-cVFnmaX7F0lmIEBqIddAyZXR8SFiGpA9Zka8w?e=Dck4QZ"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2">Emotional Intelligence</h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/Ea0oxI-F7QVIjjcS4q5kK2ABQglPphG4Lht3zTnCJWTbmw?e=SxOzCr "
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+            <div class="certificate-card bg-white rounded-lg p-4">
+              <h5 class="font-bold text-lg mb-2">Developing Interpersonal Skills </h5>
+              <p class="text-gray-600 mb-2">Issuer: Coursera</p>
+              <a href="https://capeitinitiative-my.sharepoint.com/:b:/g/personal/unathi_qamza_capaciti_org_za/EdMM5Fh8w8FOuqcw0HL-e2ABsS97bA7j6H5Umo1CdrMOIQ?e=c35msb"
+                target="_blank" class="certificate-link">
+                View Certificate <i class="fas fa-external-link-alt ml-1"></i>
+              </a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 bg-gray-100 relative overflow-hidden section-hidden">
+    <div class="container mx-auto px-6 max-w-6xl relative z-10">
+      <h3 class="text-4xl font-bold text-center mb-10 text-indigo-600">Featured Projects</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 - Thrivesense -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover project-card">
+          <div class="project-image-container">
+            <img src="images/thrivesense.png" alt="Thrivesense - AI Emotional Journaling Tool"
+              class="project-screenshot">
+            <div class="project-overlay">
+              <span class="text-white font-bold text-lg">View Details</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">Thrivesense</h4>
+            <p class="text-gray-600 text-sm mb-4">An AI Emotional Journaling Tool</p>
+            <div class="flex justify-between items-center">
+              <a href="https://thrivesense.vercel.app/"
+                class="text-indigo-600 font-medium hover:underline flex items-center">
+                View Project
+              </a>
+              <a href="https://github.com/Qamza25/Thrivesense.git"
+                class="text-indigo-600 font-medium hover:underline flex items-center">
+                View Repo
+              </a>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">TypeScript</span>
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">HTML</span>
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">AI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover project-card">
+          <div class="project-image-container">
+            <img src="images/heartbits.png" alt="Thrivesense - AI Emotional Journaling Tool" class="project-screenshot">
+            <div class="project-overlay">
+              <span class="text-white font-bold text-lg">View Details</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">HeartBits </h4>
+            <p class="text-gray-600 text-sm mb-4">An AI-powered romance story generator.</p>
+            <div class="flex justify-between items-center">
+              <a href="https://heart-scribe-romance.vercel.app/"
+                class="text-indigo-600 font-medium hover:underline flex items-center">
+                View Project
+              </a>
+              <a href="https://github.com/Qamza25/heart-scribe-romance.git"
+                class="text-indigo-600 font-medium hover:underline flex items-center">
+                View Repo
+              </a>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 - Company Website -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover project-card">
+          <div class="project-image-container">
+            <img src="images/company logo.PNG" alt="Company Website - Voltedge Tech" class="project-screenshot">
+            <div class="project-overlay">
+              <span class="text-white font-bold text-lg">View Details</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">VoltEdge-Tech Company Website</h4>
+            <p class="text-gray-600 text-sm mb-4">An interactive website for a Tech Company</p>
+            <div class="flex justify-between items-center">
+              <a href="https://mockwebsite-voltedgetech.vercel.app/"
+                class="text-indigo-600 font-medium hover:underline flex items-center">
+                View Project
+              </a>
+              <a href="https://github.com/Qamza25/mockwebsite-voltedgetech.git"
+                class="text-indigo-600 font-medium hover:underline flex items-center">
+                View Repo
+              </a>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">HTML</span>
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">CSS</span>
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 - Smart Resume -->
+        <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover project-card">
+          <div class="project-image-container">
+            <img src=" images/my smart resume.jpg" alt="Smart Resume - AI Resume Builder" class="project-screenshot">
+            <div class="project-overlay">
+              <span class="text-white font-bold text-lg">View Details</span>
+            </div>
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-semibold mb-2">My Smart Resume</h4>
+            <p class="text-gray-600 text-sm mb-4">An AI Resume Builder Tool</p>
+            <div class="flex justify-between items-center">
+              <a href="https://smart-resume-rho.vercel.app/"
+                class="text-indigo-600 font-medium hover:underline flex items-center">
+                View Project
+              </a>
+              <a href="https://github.com/Qamza25/Smart_resume.git"
+                class="text-indigo-600 font-medium hover:underline flex items-center">
+                View Repo
+              </a>
+            </div>
+            <div class="mt-3 flex flex-wrap gap-1">
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">TypeScript</span>
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Tailwind CSS</span>
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">React</span>
+              <span class="bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded">Vite</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact"
+    class="py-20 bg-gradient-to-br from-indigo-50 to-purple-50 relative overflow-hidden section-hidden">
+    <div class="container mx-auto px-6 max-w-3xl text-center relative z-10">
+      <h3 class="text-4xl font-bold mb-6 text-indigo-600">Get In Touch</h3>
+      <p class="text-gray-700 mb-8 max-w-2xl mx-auto">I'd love to hear from you! Whether you have a question, a
+        collaboration idea, or just want to say hello, feel free to reach out.</p>
+
+      <div class="bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto card-hover">
+        <form action="https://formspree.io/f/mgvpovnk" method="POST" id="contact-form" class="contact-form">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label for="name" class="block text-gray-700 mb-2">Your Name</label>
+              <input name="name" type="text" id="name"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                placeholder="Enter your name" required>
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 mb-2">Your Email</label>
+              <input name="email" type="email" id="email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                placeholder="Enter your email" required>
+            </div>
+          </div>
+          <div>
+            <label for="subject" class="block text-gray-700 mb-2">Subject</label>
+            <input name="subject" type="text" id="subject"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+              placeholder="What is this regarding?" required>
+          </div>
+          <div>
+            <label for="message" class="block text-gray-700 mb-2">Your Message</label>
+            <textarea name="message" id="message" rows="5"
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+              placeholder="Tell me more about your project or inquiry..." required></textarea>
+          </div>
+          <button type="submit" class="btn"
+            style="background-color: #4f46e5; color: white; padding: 0.75rem 1.5rem; border-radius: 0.5rem; font-weight: 600; transition: background-color 0.3s ease;"
+            onmouseover="this.style.backgroundColor='#3730a3'" onmouseout="this.style.backgroundColor='#4f46e5'">
+            Send Message
+          </button>
+        </form>
+        <div id="form-status"></div>
+      </div>
+
+      <div class="mt-12 flex justify-center space-x-8">
+        <a href="https://www.linkedin.com/in/unathiqamza/" class="tech-icon text-gray-700 hover:text-indigo-600">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/Qamza25" class="tech-icon text-gray-700 hover:text-indigo-600">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:unathi.qamza@capaciti.org.za" class="tech-icon text-gray-700 hover:text-indigo-600">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 text-center">
+      <p>© <span id="year"></span> Unathi Qamza. All rights reserved.</p>
+      <div class="mt-4 space-x-6">
+        <a href="https://www.linkedin.com/in/unathiqamza/"
+          class="hover:text-indigo-400 transition-colors duration-300">LinkedIn</a>
+        <a href="https://github.com/Qamza25" class="hover:text-indigo-400 transition-colors duration-300">GitHub</a>
+        <a href="mailto:unathi.qamza@capaciti.org.za"
+          class="hover:text-indigo-400 transition-colors duration-300">Mail</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
