@@ -24,7 +24,7 @@
 <main id="app">
 
   <!-- 0: WELCOME -->
-  <section class="screen welcome active" data-step="0">
+  <section class="screen welcome active home-screen" data-step="0">
     <div class="welcome-text">
       
 
@@ -53,17 +53,20 @@
   </section>
 
   <!-- 1: PERSONAL DETAILS -->
-  <section class="screen" data-step="1">
+  <section class="screen greetings-screen" data-step="1">
     <div class="panel panel-greetings">
       <p class="eyebrow">01 / GREETINGS</p>
       <p class="greetings-para">Hi, nice to meet you. I am someone who believes in the power of technology to connect people and create meaningful change. I enjoy collaborating with others, celebrating milestones with humor and music, and approaching challenges with curiosity and positivity. My journey is shaped by a love for structured learning, mentoring, and uplifting those around me, whether it's helping a friend polish their work or brainstorming creative solutions with a team.</p>
       <p class="greetings-para">On the professional side, I'm a Junior Software Developer with a Diploma in Information Technology (Software Development) from Nelson Mandela University, complemented by certifications in AI, full-stack development, and cloud computing. My skills span full-stack application development (React, Node.js, PostgreSQL, Angular, Docker), mobile apps with Flutter, and UI/UX design focused on usability. I thrive in structured, goal-oriented environments where clarity drives results, and I'm passionate about delivering reliable, high-quality solutions that make technology more accessible and impactful.</p>
     </div>
-    <button class="btn-continue">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="step-nav">
+      <button class="btn-continue btn-back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</button>
+      <button class="btn-continue btn-next">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
   </section>
 
   <!-- 2: EXPERIENCE -->
-  <section class="screen" data-step="2">
+  <section class="screen experience-screen" data-step="2">
     <div class="panel wide panel-experience">
       <p class="eyebrow">02 / THE JOURNEY</p>
       <div class="timeline">
@@ -90,11 +93,14 @@
         </div>
       </div>
     </div>
-    <button class="btn-continue">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="step-nav">
+      <button class="btn-continue btn-back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</button>
+      <button class="btn-continue btn-next">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
   </section>
 
   <!-- 3: EDUCATION -->
-  <section class="screen" data-step="3">
+  <section class="screen education-screen" data-step="3">
     <div class="panel">
       <p class="eyebrow">03 / FOUNDATION</p>
       <div class="edu-card">
@@ -103,11 +109,14 @@
         <p>Software Development · Nelson Mandela University</p>
       </div>
     </div>
-    <button class="btn-continue">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="step-nav">
+      <button class="btn-continue btn-back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</button>
+      <button class="btn-continue btn-next">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
   </section>
 
   <!-- 4: SKILLS -->
-  <section class="screen" data-step="4">
+  <section class="screen skills-screen" data-step="4">
     <div class="panel wide panel-tight">
       <p class="eyebrow">04 / TOOLKIT</p>
       <div class="skills-grid">
@@ -143,48 +152,160 @@
         </div>
       </div>
     </div>
-    <button class="btn-continue">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="step-nav">
+      <button class="btn-continue btn-back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</button>
+      <button class="btn-continue btn-next">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
   </section>
 
   <!-- 5: CERTIFICATIONS -->
-  <section class="screen" data-step="5">
-    <div class="panel wide">
+  <section class="screen certs-screen" data-step="5">
+    <div class="panel wide panel-certs">
       <p class="eyebrow">05 / TRAINING LOG</p>
       <h2>Certifications &amp; Technical Training</h2>
       <div class="cert-grid">
         <a class="cert-pill" href="Unathi Qamza_Certs/Introduction to Software Engineering.pdf" target="_blank" rel="noopener"><span>Introduction to Software Engineering</span></a>
         <a class="cert-pill" href="Unathi Qamza_Certs/Developing AI Applications with Python and Flask.pdf" target="_blank" rel="noopener"><span>Developing AI Applications with Python and Flask</span></a>
-        <a class="cert-pill" href="Unathi Qamza_Certs/Developing Back-End Apps with Node.js and Express.pdf" target="_blank" rel="noopener"><span>Developing Back-End Apps with Node.js and Express</span></a>
+        <a class="cert-pill" href="Unathi Qamza_Certs/Developing Back-End Apps with Node.js and.pdf" target="_blank" rel="noopener"><span>Developing Back-End Apps with Node.js and Express</span></a>
         <a class="cert-pill" href="Unathi Qamza_Certs/Developing Front-End Apps with React.pdf" target="_blank" rel="noopener"><span>Developing Front-End Apps with React</span></a>
-        <a class="cert-pill" href="Unathi Qamza_Certs/Django Application Development with SQL and Databases.pdf" target="_blank" rel="noopener"><span>Django Application Development with SQL and Databases</span></a>
+        <a class="cert-pill" href="Unathi Qamza_Certs/Django Application Development with SQL and.pdf" target="_blank" rel="noopener"><span>Django Application Development with SQL and Databases</span></a>
         <a class="cert-pill" href="Unathi Qamza_Certs/Full Stack Application Development Capstone.pdf" target="_blank" rel="noopener"><span>Full Stack Application Development Capstone</span></a>
         <a class="cert-pill" href="Unathi Qamza_Certs/Generative AI_ Elevate your Software Development.pdf" target="_blank" rel="noopener"><span>Generative AI: Elevate Your Software Development</span></a>
         <a class="cert-pill" href="Unathi Qamza_Certs/Getting Started with Git and GitHub.pdf" target="_blank" rel="noopener"><span>Getting Started with Git and GitHub</span></a>
         <a class="cert-pill" href="Unathi Qamza_Certs/Introduction to Cloud Computing.pdf" target="_blank" rel="noopener"><span>Introduction to Cloud Computing</span></a>
         <a class="cert-pill" href="Unathi Qamza_Certs/Introduction to Containers with Docker, Kubernetes.pdf" target="_blank" rel="noopener"><span>Introduction to Containers with Docker &amp; Kubernetes</span></a>
         <a class="cert-pill" href="Unathi Qamza_Certs/Introduction to HTML, CSS, & JavaScript.pdf" target="_blank" rel="noopener"><span>Introduction to HTML, CSS &amp; JavaScript</span></a>
+        <a class="cert-pill" href="Unathi Qamza_Certs/Software Developer Career Guide and Interview.pdf" target="_blank" rel="noopener"><span>Software Developer Career Guide and Interview Prep</span></a>
+        <a class="cert-pill" href="Unathi Qamza_Certs/Unathi Qamza-210631780-Introduction to Software Engineering.pdf" target="_blank" rel="noopener"><span>Introduction to Software Engineering (Certificate)</span></a>
+        <a class="cert-pill" href="Unathi Qamza_Certs/diploma.pdf" target="_blank" rel="noopener"><span>Nelson Mandela University Diploma</span></a>
       </div>
     </div>
-    <button class="btn-continue">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="step-nav">
+      <button class="btn-continue btn-back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</button>
+      <button class="btn-continue btn-next">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
   </section>
 
   <!-- 6: PROJECTS -->
-  <section class="screen" data-step="6">
-    <div class="panel wide">
+  <section class="screen projects-screen" data-step="6">
+    <div class="projects-container">
       <p class="eyebrow">06 / TRANSMISSIONS</p>
-      <p class="panel-sub">Take a look through my repositories to see what I've been building.</p>
-      <div class="github-callout">
-        <a href="https://github.com/Qamza25" target="_blank" rel="noopener" class="btn-continue glow">
-          <span>Visit My GitHub</span>
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+      <p class="panel-sub">A look through some of what I've been building.</p>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/voltedge tech.png" alt="VoltEdge Tech screenshot" loading="lazy">
+            <div class="project-scrim"></div>
+            <div class="project-info">
+              <h4>VoltEdge Tech</h4>
+              <div class="project-tags"><span>Business</span><span>Landing Page</span></div>
+            </div>
+          </div>
+          <a class="project-cta-btn" href="https://mockwebsite-voltedgetech.vercel.app/" target="_blank" rel="noopener">View Live</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/openbank.png" alt="OpenBank screenshot" loading="lazy">
+            <div class="project-scrim"></div>
+            <div class="project-info">
+              <h4>OpenBank</h4>
+              <div class="project-tags"><span>Fintech</span><span>UI Design</span></div>
+            </div>
+          </div>
+          <a class="project-cta-btn" href="https://openbank-ten.vercel.app/" target="_blank" rel="noopener">View Live</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/gitlens.png" alt="GitHub Explorer screenshot" loading="lazy">
+            <div class="project-scrim"></div>
+            <div class="project-info">
+              <h4>GitHub Explorer</h4>
+              <div class="project-tags"><span>API</span><span>React</span></div>
+            </div>
+          </div>
+          <a class="project-cta-btn" href="https://github-explorer-ashy-phi.vercel.app/" target="_blank" rel="noopener">View Live</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/parentals.png" alt="SA Homeschooling Services screenshot" loading="lazy">
+            <div class="project-scrim"></div>
+            <div class="project-info">
+              <h4>SA Homeschooling Services</h4>
+              <div class="project-tags"><span>Education</span><span>Services</span></div>
+            </div>
+          </div>
+          <a class="project-cta-btn" href="https://sa-homeschooling-services.vercel.app/" target="_blank" rel="noopener">View Live</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/hg promotions.png" alt="HG Promotions screenshot" loading="lazy">
+            <div class="project-scrim"></div>
+            <div class="project-info">
+              <h4>HG Promotions</h4>
+              <div class="project-tags"><span>Staffing</span><span>Full Stack</span></div>
+            </div>
+          </div>
+          <a class="project-cta-btn" href="https://hg-promotions.vercel.app/" target="_blank" rel="noopener">View Live</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/phunyatsela.png" alt="Phunya Tsela Expo screenshot" loading="lazy">
+            <div class="project-scrim"></div>
+            <div class="project-info">
+              <h4>Phunya Tsela Expo</h4>
+              <div class="project-tags"><span>Events</span><span>Careers</span></div>
+            </div>
+          </div>
+          <a class="project-cta-btn" href="https://phunya-tsela-expo-main-2pcx.vercel.app/" target="_blank" rel="noopener">View Live</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/oxygen media .png" alt="Oxygen Media screenshot" loading="lazy">
+            <div class="project-scrim"></div>
+            <div class="project-info">
+              <h4>Oxygen Media</h4>
+              <div class="project-tags"><span>Media</span><span>Branding</span></div>
+            </div>
+          </div>
+          <a class="project-cta-btn" href="https://oxygenmedia.vercel.app/" target="_blank" rel="noopener">View Live</a>
+        </div>
+
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="images/fakugesi.png" alt="Fak'ugesi 2026 screenshot" loading="lazy">
+            <div class="project-scrim"></div>
+            <div class="project-info">
+              <h4>Fak'ugesi 2026</h4>
+              <div class="project-tags"><span>Festival</span><span>Culture</span></div>
+            </div>
+          </div>
+          <a class="project-cta-btn" href="https://fakugesi-2026.vercel.app/" target="_blank" rel="noopener">View Live</a>
+        </div>
+
+        <div class="project-card project-card-more">
+          <div class="project-more-inner">
+            <h4>More on GitHub</h4>
+            <p>See everything else I've built.</p>
+          </div>
+          <a class="project-cta-btn" href="https://github.com/Qamza25" target="_blank" rel="noopener">Visit Profile</a>
+        </div>
       </div>
     </div>
-    <button class="btn-continue">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="step-nav">
+      <button class="btn-continue btn-back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</button>
+      <button class="btn-continue btn-next">Continue<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
   </section>
 
   <!-- 7: CONTACT -->
-  <section class="screen" data-step="7">
+  <section class="screen contact-screen" data-step="7">
     <div class="panel panel-tight panel-contact">
       <p class="eyebrow">07 / GET IN TOUCH</p>
       <p class="panel-sub">Have a role, a project, or just want to say hello — this reaches me directly.</p>
@@ -224,6 +345,10 @@
         <a href="mailto:unathyqamza@gmail.com" aria-label="Email">Email</a>
       </div>
       <p class="end-note">© <span id="year"></span> Unathi Qamza · transmission complete</p>
+      <div class="step-nav">
+        <button class="btn-continue btn-back"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M19 12H5M11 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Back</button>
+        <button class="btn-continue btn-exit" id="exitBtn"><span>Exit</span><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </div>
     </div>
   </section>
 

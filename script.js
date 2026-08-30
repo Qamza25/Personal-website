@@ -174,12 +174,24 @@ function goTo(stepIndex){
 
 document.getElementById('enterBtn').addEventListener('click', () => goTo(1));
 
-document.querySelectorAll('.screen:not(.welcome) .btn-continue:not(#sendBtn)').forEach(btn => {
+document.querySelectorAll('.btn-next').forEach(btn => {
   btn.addEventListener('click', () => {
     const next = current + 1;
     if(next <= totalSteps) goTo(next);
   });
 });
+
+document.querySelectorAll('.btn-back').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const prev = current - 1;
+    if(prev >= 0) goTo(prev);
+  });
+});
+
+const exitBtn = document.getElementById('exitBtn');
+if(exitBtn){
+  exitBtn.addEventListener('click', () => goTo(0));
+}
 
 railSteps.addEventListener('click', (e) => {
   const li = e.target.closest('li');
